@@ -11,9 +11,39 @@ body {
     grid-row: 1 / 3;
 }
 
-.sidebar div p,
-.sidebar-title {
+.sidebar div {
     font-family: "Roboto";
+    display: grid;
+    grid-template-columns: 50px 120px;
+    column-gap: 30px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.sidebar div:first-child {
+    display: grid;
+    grid-template-columns: 70px 120px;
+    column-gap: 5px;
+}
+
+.sidebar div svg {
+    height: 30px;
+    width: 30px;
+    align-self: center;
+    justify-self: end;
+}
+
+.sidebar .sidebar-title {
+    font-weight: bold;
+    font-size: 25px;
+    margin: 0px;
+    align-self: center;
+}
+
+.sidebar div:first-child svg {
+    height: 45px;
+    width: 45px;
+    justify-self: center;
 }
 
 .header {
