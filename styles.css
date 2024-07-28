@@ -79,6 +79,12 @@ body {
     grid-column: 2;
 }
 
+.searchbar svg {
+    height: 30px;
+    width: 30px;
+}
+
+
 .main-content {
     grid-column: 2;
     display: grid;
