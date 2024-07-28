@@ -2,6 +2,8 @@
 
 :root {
     --blue-bg-color: #0ea5e9;
+    --light-gray: #e5e7eb;
+    --svg-dimensions: 30px;
 }
 
 body {
@@ -36,8 +38,8 @@ body {
 }
 
 .sidebar div svg {
-    height: 30px;
-    width: 30px;
+    height: var(--svg-dimensions);
+    width: var(--svg-dimensions);
     align-self: center;
     justify-self: end;
     fill: white;
@@ -79,9 +81,26 @@ body {
     grid-column: 2;
 }
 
-.searchbar svg {
-    height: 30px;
-    width: 30px;
+.search-bar {
+    display: grid;
+    grid-template-columns: 70px 500px;
+    grid-template-rows: 70px;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.search-bar svg {
+    height: var(--svg-dimensions);
+    width: var(--svg-dimensions);
+    justify-self: end;
+}
+
+.search-bar input {
+    border-radius: 15px;
+    outline: none;
+    border: 0px solid white;
+    background-color: var(--light-gray);
+    height: var(--svg-dimensions);
 }
 
 
