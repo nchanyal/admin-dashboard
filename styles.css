@@ -101,6 +101,9 @@ body {
     border: 0px solid white;
     background-color: var(--light-gray);
     height: var(--svg-dimensions);
+    font-family: "Roboto";
+    padding: 0px 10px;
+    font-size: 17px;
 }
 
 
