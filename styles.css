@@ -15,6 +15,8 @@ body {
     gap: 50px;
     grid-row: 1 / 3;
     background-color: var(--blue-bg-color);
+    grid-template-rows: 45px;
+    padding-top: 10px;
 }
 
 .sidebar div {
@@ -52,6 +54,15 @@ body {
     height: 45px;
     width: 45px;
     justify-self: center;
+}
+
+.sidebar div p {
+    margin: 0px;
+    align-self: center;
+}
+
+.sidebar div:last-child {
+    grid-auto-rows: 50px;
 }
 
 .header {
