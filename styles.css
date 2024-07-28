@@ -24,7 +24,7 @@ body {
     column-gap: 30px;
     font-weight: bold;
     font-size: 20px;
-    /* color: white; */
+    color: white;
 }
 
 .sidebar div:first-child {
@@ -38,7 +38,7 @@ body {
     width: 30px;
     align-self: center;
     justify-self: end;
-    /* fill: white; */
+    fill: white;
 }
 
 .sidebar .sidebar-title {
