@@ -4,6 +4,7 @@
     --blue-bg-color: #0ea5e9;
     --light-gray: #e5e7eb;
     --svg-dimensions: 30px;
+    --button-width: 110px;
 }
 
 body {
@@ -147,6 +148,24 @@ body {
 
 .user-info p {
     margin: 0px;
+}
+
+.header-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, var(--button-width));
+    column-gap: 30px;
+    align-items: end;
+}
+
+.header-buttons button {
+    height: 45px;
+    width: var(--button-width);
+    border-radius: 23px;
+    border: 0px solid white;
+    color: white;
+    background-color: var(--blue-bg-color);
+    font-weight: bold;
+    font-size: 18px;
 }
 
 
