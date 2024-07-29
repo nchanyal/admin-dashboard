@@ -106,6 +106,26 @@ body {
     font-size: 17px;
 }
 
+.user-info {
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 170px 150px;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.user-info svg {
+    height: var(--svg-dimensions);
+    width: var(--svg-dimensions);
+    justify-self: end;
+}
+
+.user-info p {
+    margin: 0px;
+}
+
 
 .main-content {
     grid-column: 2;
