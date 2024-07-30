@@ -182,23 +182,33 @@ body {
     grid-template-columns: 3fr 1fr;
 }
 
-.main-content .announcements {
+.main-content-title {
+    grid-column: 1 / 3;
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.announcements {
     grid-column: 2;
 }
 
-.main-content .trending {
+.trending {
     grid-column: 2;
 }
 
-.main-content .cards {
+.cards {
     grid-row: 1 / 3;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 370px);
+    grid-template-rows: 60px;
     gap: 15px;
+    justify-content: end;
 }
 
-.main-content .cards .main-content-title {
-    grid-column: 1 / 3;
+.cards p:first-child {
+    margin: 0px;
+    align-self: end;
 }
 
 .trending .container {
