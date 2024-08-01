@@ -248,6 +248,10 @@ body {
     grid-template-rows: 60px;
 }
 
+.announcements div {
+    background-color: white;
+}
+
 .trending {
     grid-column: 2;
 }
