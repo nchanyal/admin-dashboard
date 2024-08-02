@@ -288,9 +288,11 @@ body {
 
 .trending {
     grid-column: 2;
+    width: 300px;
 }
 
-.trending .container {
+.trending > div {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    background-color: white;
 }
