@@ -255,6 +255,18 @@ body {
     align-items: center;
 }
 
+.wrapper p {
+    font-family: "Roboto";
+}
+
+.wrapper > div p:first-of-type {
+    font-weight: bold;
+}
+
+.wrapper > div p:last-of-type {
+    color: var(--darker-gray);
+}
+
 .trending {
     grid-column: 2;
 }
