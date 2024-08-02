@@ -11,7 +11,7 @@
 
 body {
     display: grid;
-    grid-template-columns: 263px 1160px;
+    grid-template-columns: 263px 1130px;
     margin: 0px;
     background-color: var(--light-gray);
 }
@@ -177,7 +177,7 @@ body {
 .main-content {
     grid-column: 2;
     display: grid;
-    grid-template-columns: 730px 370px;
+    grid-template-columns: 730px 340px;
     justify-content: end;
     column-gap: 25px;
     height: 850px;
@@ -246,7 +246,8 @@ body {
     grid-column: 2;
     display: grid;
     grid-template-columns: 300px;
-    grid-template-rows: 60px 365px;
+    grid-template-rows: 60px 340px;
+    row-gap: 25px;
 }
 
 .announcements > div {
@@ -254,6 +255,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 7px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+    clip-path: inset(0px -10px -10px 0px);
 }
 
 .wrapper {
@@ -273,6 +277,13 @@ body {
 .wrapper > div p:last-of-type {
     color: var(--darker-gray);
     margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.wrapper div:first-child,
+.wrapper div:nth-child(2) {
+    border-bottom: 1px solid var(--darker-gray);
+    margin-bottom: 20px;
 }
 
 .trending {
