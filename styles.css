@@ -5,6 +5,7 @@
     --light-gray: #e5e7eb;
     --darker-gray: #4b5563;
     --svg-dimensions: 30px;
+    --bigger-svg-dimensions: 33px;
     --button-width: 110px;
     --card-border-color: #fbbf24;
 }
@@ -291,13 +292,44 @@ body {
     width: 300px;
 }
 
-.trending > div {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+.wrapper-2 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
     background-color: white;
 }
 
-.trending > div svg {
-    height: var(--svg-dimensions);
-    width: var(--svg-dimensions);
+.container {
+    display: grid;
+    grid-template-columns: 30px 190px;
+    grid-auto-rows: 35px;
+    width: 240px;
+    height: 336px;
+    column-gap: 20px;
+    row-gap: 40px;
+    align-content: center;
+}
+
+.container svg {
+    height: var(--bigger-svg-dimensions);
+    width: var(--bigger-svg-dimensions);
+    justify-self: end;
+    align-self: center;
+}
+
+.container div {
+    display: grid;
+}
+
+.container div p {
+    margin: 0;
+    font-family: "Roboto";
+}
+
+.container div p:first-of-type {
+    align-self: end;
+}
+
+.container div p:last-of-type {
+    color: var(--darker-gray);
 }
