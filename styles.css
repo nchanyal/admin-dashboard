@@ -287,6 +287,11 @@ body {
 .wrapper > div p:last-of-type {
     color: var(--darker-gray);
     margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.wrapper > div:first-child p:last-of-type,
+.wrapper > div:nth-child(2) p:last-of-type {
     margin-bottom: 20px;
 }
 
